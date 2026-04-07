@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: bnp-paribas:bnp-paribas
     name: BNP Paribas
-    tags:
-      - API
+    tags: []
     humanURL: ' https://developers.cib.bnpparibas.com/api-catalog'
     properties:
       - url: ' https://developers.cib.bnpparibas.com/api-catalog'
