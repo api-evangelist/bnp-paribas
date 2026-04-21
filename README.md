@@ -1,42 +1,24 @@
-# BNP Paribas (bnp-paribas)
-BNP Paribas is a leading international banking group that provides a wide range of financial services to individuals, businesses, and institutions around the world. The company offers retail banking, corporate and institutional banking, asset management, insurance, and investment services. BNP Paribas is known for its expertise in global markets, wealth management, and innovative solutions tailored to the needs of its clients. With a strong commitment to sustainable finance and corporate responsibility, BNP Paribas strives to create long-term value for its stakeholders while contributing to a more sustainable and inclusive society.
+# BNP Paribas
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/bnp-paribas/refs/heads/main/apis.yml)
+BNP Paribas is a leading international banking group providing a wide range of financial services to individuals, businesses, and institutions worldwide. The company offers APIs through its CIB Developer Portal covering capital markets, payment services, securities services, and open banking integrations for corporate and institutional clients.
 
-## Scope
-
-- **Type:** Contract 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
-
-## Tags:
-
- - Banking
-
-## Timestamps
-
-- **Created:** 2025-02-08 
-- **Modified:** 2025-02-24 
+**URL:** [View APIs.yml](https://raw.githubusercontent.com/api-evangelist/bnp-paribas/refs/heads/main/apis.yml)
 
 ## APIs
 
-### BNP Paribas
-BNP Paribas CIB is a leading global financial services firm, offering you solutions in capital markets, securities services, advisory, finance and treasury 
+### BNP Paribas CIB API
+Corporate and Institutional Banking API platform providing programmatic access to capital markets, payment services, securities services, and treasury solutions. Includes payment initiation, fund availability checks, and SEPA direct debit management.
 
-**Human URL:** [ https://developers.cib.bnpparibas.com/api-catalog]( https://developers.cib.bnpparibas.com/api-catalog)
+### BNP Paribas Open Banking API
+PSD2-compliant payment services and account information APIs including check availability of funds, EASYCOLLECT SEPA mandate management, and payment initiation across European markets.
 
+## Links
 
-#### Tags:
-
- - API
-
-#### Properties
-
-- [Documentation]( https://developers.cib.bnpparibas.com/api-catalog)
+- [Website](https://www.bnpparibas.com)
+- [CIB Developer Portal](https://developers.cib.bnpparibas.com/api-catalog)
+- [Getting Started](https://developers.cib.bnpparibas.com/how-to)
+- [Open Banking API Store](https://apistore.bnpparibas)
 
 ## Maintainers
 
-**FN:** Kin Lane
-
-**Email:** info@apievangelist.com
-
+- **Kin Lane** - kinlane@gmail.com
