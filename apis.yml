@@ -62,6 +62,10 @@ apis:
         url: https://apistore.bnpparibas
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/bnpparibas
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/bnp-paribas
   - type: Website
     url: https://www.bnpparibas.com
   - type: Portal
