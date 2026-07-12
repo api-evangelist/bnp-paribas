@@ -1,0 +1,39 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.bnpparibas.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  5 23:59:59 2026 GMT
+  hsts: null
+- host: developers.cib.bnpparibas.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 10 23:59:59 2026 GMT
+  hsts: false
+- host: apistore.bnpparibas
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 18 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+domains:
+- domain: bnpparibas.com
+  dnssec: true
+  caa:
+  - 0 iodef "mailto:report-abuse@globalsign.com"
+  - 0 issue "globalsign.com"
+  - 0 issue "d-trust.net"
+  - 0 issue "pki.goog"
+  - 0 issuewild ";"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: apistore.bnpparibas
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
