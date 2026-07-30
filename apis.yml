@@ -6,7 +6,19 @@ description: >-
   offers APIs through its CIB Developer Portal covering capital markets, payment services,
   securities services, and open banking integrations for corporate and institutional clients.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bnp-paribas.png
 url: https://raw.githubusercontent.com/api-evangelist/bnp-paribas/refs/heads/main/apis.yml
 created: '2025-02-08'
 modified: '2026-04-21'
