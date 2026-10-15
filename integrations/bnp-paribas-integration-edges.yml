@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/bnp-paribas/integrations
 - https://n8n.io/integrations/bnp-paribas/
@@ -9,8 +9,97 @@ checked:
 - https://composio.dev/toolkits/bnp-paribas
 - https://monid.ai/tools/bnp-paribas
 - https://n8n.io/integrations/bnp-paribas/
+- https://registers.esma.europa.eu/solr/esma_registers_bench_entities/select
+- https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
 - https://zapier.com/apps/bnp-paribas/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: ISO 10383 (MIC)
+  partner: null
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.iso20022.org/sites/default/files/ISO10383_MIC/ISO10383_MIC.csv
+  source: mic
+  category: registered trading venues and market segments
+  contract_reference:
+    register: ISO 10383 Market Identifier Codes (ISO 20022 registration authority)
+    spec_file: null
+    standard: ISO 10383
+    role: venue operator
+    matched_domain: bnpparibas.com
+    matched_by: domain+verified:bnpparibas.com
+    categories:
+    - SINT
+    operating_mics:
+    - BNPA
+    - BNPL
+    - BNPS
+    - BPSX
+    - BSPL
+    mics:
+    - mic: BSPL
+      operating_mic: BSPL
+      segment: OPRT
+      market: BNP PARIBAS SECURITIES SERVICES LONDON BRANCH
+      category: SINT
+      legal_name: BNP PARIBAS SECURITIES SERVICES
+      country: GB
+    - mic: BNPL
+      operating_mic: BNPL
+      segment: OPRT
+      market: BNP PARIBAS SA LONDON BRANCH
+      category: SINT
+      legal_name: BNP PARIBAS
+      country: GB
+    - mic: BPSX
+      operating_mic: BPSX
+      segment: OPRT
+      market: BNP PARIBAS SECURITIES SERVICES
+      category: SINT
+      legal_name: ''
+      country: FR
+    - mic: BNPA
+      operating_mic: BNPA
+      segment: OPRT
+      market: BNP PARIBAS ARBITRAGE SNC
+      category: SINT
+      legal_name: ''
+      country: FR
+    - mic: BNPS
+      operating_mic: BNPS
+      segment: OPRT
+      market: BNP PARIBAS SA
+      category: SINT
+      legal_name: ''
+      country: FR
+    detected_by: sweep-capital-markets.py
+    detected: '2026-10-15'
+  detected_by: sweep-capital-markets.py
+  first_seen: '2026-10-15'
+- partner_name: ESMA (EU)
+  partner: null
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://registers.esma.europa.eu/solr/esma_registers_bench_entities/select
+  source: esma
+  contract_reference:
+    register: 'ESMA Benchmarks Regulation register: administrators (esma_registers_bench_entities)'
+    spec_file: null
+    registered_name: BNP PARIBAS
+    register_id: R0MUWSFPU8MPRO8K5P83
+    role: benchmark administrator (Registration under Art. 34)
+    competent_authority: Autorité des Marchés Financiers (AMF) - FRAM
+    home_member_state: FRANCE
+    authorised: null
+    matched_domain: bnpparibas.com
+    matched_by: domain+verified:bnpparibas.com
+    detected_by: sweep-capital-markets.py
+    detected: '2026-10-15'
+  detected_by: sweep-capital-markets.py
+  first_seen: '2026-10-15'
 templates: []
