@@ -64,7 +64,7 @@
       legal_name: ''
       country: FR
     detected_by: sweep-capital-markets.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   status: not-a-workflow
   arazzo: null
 - slug: bnp-paribas-esma-eu
@@ -87,6 +87,53 @@
     matched_domain: bnpparibas.com
     matched_by: domain+verified:bnpparibas.com
     detected_by: sweep-capital-markets.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
+  status: not-a-workflow
+  arazzo: null
+- slug: bnp-paribas-sebi-registered-intermediaries-securities-and-exchange-board-of-india
+  label: SEBI registered intermediaries (Securities and Exchange Board of India)
+  partner_name: SEBI registered intermediaries (Securities and Exchange Board of India)
+  category: India SEBI registered intermediary (custodian, depository-participant-nsdl, merchant-banker)
+  type: register
+  channel: regulator-register
+  evidence: https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=27
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: SEBI registered intermediaries (Securities and Exchange Board of India)
+    spec_file: null
+    standard: null
+    role: sebi-intermediary
+    intermediary_types:
+    - custodian
+    - depository-participant-nsdl
+    - merchant-banker
+    registrations:
+    - registered_name: BNP Paribas
+      intermediary_types:
+      - depository-participant-nsdl
+      - custodian
+      - merchant-banker
+      registrations:
+      - type: depository-participant-nsdl
+        registration_no: IN-DP-114-2015
+        validity: Jul 19, 2000 - Perpetual
+      - type: depository-participant-nsdl
+        registration_no: IN-DP-NSDL-151-2000
+        validity: Jul 19, 2000 - Perpetual
+      - type: custodian
+        registration_no: IN/CUS/023
+      - type: merchant-banker
+        registration_no: INM000011534
+        validity: Jul 24, 2014 - Perpetual
+      register_country: IN
+      matched_domain: bnpparibas.com
+      matched_by: domain+name-among-holders
+      identity: SEBI register e-mail domain
+    register_date: '2026-10-21'
+    signal_note: 'participation only: a SEBI registration as a capital-markets intermediary; the register publishes
+      no API conformance'
+    detected_by: sweep-india-rbi-sebi-registers.py
+    detected: '2026-10-22'
   status: not-a-workflow
   arazzo: null
